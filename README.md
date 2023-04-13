@@ -1,2 +1,3 @@
 # simple_shell
-Welcome to the GATES OF SHELL!
+
+Hello, welcome to our second ALx group project. In this project we will be replicating the Unix Shell!
