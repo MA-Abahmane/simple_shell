@@ -19,7 +19,7 @@ if (chdir(args[1]) != 0)
 perror("Error");
 }
 }
-return 1;
+return (1);
 }
 
 /**
@@ -46,7 +46,7 @@ printf("%s\n", args[i]);
 else
 fprintf(stderr, ".\\shell: expected argument after echo\n");
 
-return(1);
+return (1);
 }
 
 
@@ -55,8 +55,7 @@ return(1);
  *
  */
 /* commands list */
-char *cmds[] = 
-{
+char *cmds[] = {
 "cd", "echo", NULL
 };
 
@@ -65,10 +64,9 @@ char *cmds[] =
  *   to the command functions.
  */
 /* command functions list */
-int (*cmd_functions[]) (char**) = 
-{
+int (*cmd_functions[]) (char **) = {
 &cd,
-&echo
+&echo 
 };
 
 
