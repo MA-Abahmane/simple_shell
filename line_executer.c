@@ -29,6 +29,7 @@ return (1);
  * Return: nothing.
  */
 /* The exit command */
+
 int echo(char **args)
 {
 int i = 1;
@@ -55,7 +56,8 @@ return (1);
  *
  */
 /* commands list */
-char *cmds[] = {
+
+char *cmds[] ={
 "cd", "echo", NULL
 };
 
@@ -64,9 +66,9 @@ char *cmds[] = {
  *   to the command functions.
  */
 /* command functions list */
-int (*cmd_functions[]) (char **) = {
+int (*cmd_functions[])(char **) ={
 &cd,
-&echo 
+&echo
 };
 
 
