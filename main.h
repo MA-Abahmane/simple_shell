@@ -14,7 +14,7 @@
 
 /* Function prototypes */
 int _putchar(char c);
-void main_loop();
+void main_loop(void);
 char *line_reader();
 char **line_args(char *line);
 int line_executer(char **args);
