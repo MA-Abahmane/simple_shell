@@ -52,4 +52,5 @@ arg = strtok(NULL, SEPARATORS);
 /* ending the 2D array with NULL and return */
 arg_arr[i] = NULL;
 return (arg_arr);
+free(arg_arr);
 }
