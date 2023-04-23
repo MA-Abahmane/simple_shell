@@ -55,7 +55,6 @@ return (1);
  * cmds - a list of file names to run comands.
  *
  */
-/* commands list */
 
 char *comds[] = {
 "cd", "echo", NULL
@@ -65,7 +64,7 @@ char *comds[] = {
  * cmd_functions - a list that contains pointers to
  *   to the command functions.
  */
-/* command functions list */
+
 int (*cmd_functions[])(char **) = {
 &cd,
 &echo
