@@ -25,6 +25,8 @@ lineArgs = line_args(line);
 /* execute the command line */
 stat = line_executer(lineArgs);
 
+free(line);
+free(lineArgs);
 } while(stat);
 
 }
