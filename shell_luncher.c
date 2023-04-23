@@ -30,7 +30,7 @@ exit(EXIT_FAILURE);
 }
 
 /* check if fork failed */
-else if (PID < 0|| PID_Wait < 0)
+else if (PID < 0 || PID_Wait < 0)
 {
 perror("./shell");
 }
