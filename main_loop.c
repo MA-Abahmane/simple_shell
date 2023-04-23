@@ -11,7 +11,6 @@ void main_loop()
 char *line, **lineArgs;
 int stat;
 
-
 /* The main shell loop */
 do {
 printf("($)");
