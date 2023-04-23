@@ -6,11 +6,11 @@
  * Return: Always 0.
  */
 
-int main()
+int main(void)
 {
 
 /* shell loop */
 main_loop();
 
-return 0;
+return (0);
 }
