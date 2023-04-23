@@ -6,7 +6,7 @@
  * Return: None.
  */
 
-void main_loop()
+void main_loop(void)
 {
 char *line, **lineArgs;
 int stat;
@@ -26,6 +26,6 @@ stat = line_executer(lineArgs);
 
 free(line);
 free(lineArgs);
-} while(stat);
+} while (stat);
 
 }
