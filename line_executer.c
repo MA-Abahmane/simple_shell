@@ -57,7 +57,7 @@ return (1);
  */
 /* commands list */
 
-char *cmds[] ={
+char *comds[] = {
 "cd", "echo", NULL
 };
 
@@ -66,7 +66,7 @@ char *cmds[] ={
  *   to the command functions.
  */
 /* command functions list */
-int (*cmd_functions[])(char **) ={
+int (*cmd_functions[])(char **) = {
 &cd,
 &echo
 };
@@ -91,10 +91,10 @@ return (1);
 
 /* check if the command function are present, then call them.. */
 i = 0;
-while (cmds[i] != NULL)
+while (comds[i] != NULL)
 {
 
-if (strcmp(args[0], cmds[i]) == 0)
+if (strcmp(args[0], comds[i]) == 0)
 return ((*cmd_functions[i]) (args));
 
 ++i;
