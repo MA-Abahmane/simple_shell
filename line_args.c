@@ -2,12 +2,10 @@
 #define SEPARATORS " \t\r\n\a"
 
 /**
- * line_args - a function that sets the separated arguments of a string
- *  into a 2D array.
+ * line_args - a function that separated the arguments of a string.
  * @line: the string to process.
  *
- * Return: return the 2D array containing the sting lines
- *  arguments.
+ * Return: return the 2D array containing the sting lines arguments.
  */
 
 char **line_args(char *line)
@@ -23,16 +21,14 @@ if (arg_arr == NULL)
 fprintf(stderr, "./shell: allocation failed\n");
 exit(EXIT_FAILURE);
 }
-
-/* strtok points to all the serarated arguments in the command
-string (line) and returns a pointer to the first one (arg) */
+/* strtok points to all the serarated arguments in the command */
+/* string (line) and returns a pointer to the first one (arg) */
 i = 0;
 arg = strtok(line, SEPARATORS);
 while (arg != NULL)
 {
 arg_arr[i] = arg;
 ++i;
-
 /* If buffer limit reached, double its size */
 if (i >= bufSize)
 {
@@ -43,12 +39,10 @@ if (arg_arr == NULL)
 fprintf(stderr, "./shell: reallocation failed\n");
 exit(EXIT_FAILURE);
 }
-
 }
 /* point to the next arguments */
 arg = strtok(NULL, SEPARATORS);
 }
-
 /* ending the 2D array with NULL and return */
 arg_arr[i] = NULL;
 return (arg_arr);
