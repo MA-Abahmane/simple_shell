@@ -2,7 +2,7 @@
 
 /**
  * line_reader - read the entered command line and
- convert it to a string.
+ *   convert it to a string.
  *
  * Return: the comand line as a string.
  */
