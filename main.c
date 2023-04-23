@@ -2,8 +2,6 @@
 
 /**
  * main - the main function.
- * @argv: given main arguments array.
- * @argc: given main arguments array size.
  *
  * Return: Always 0.
  */
