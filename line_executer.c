@@ -50,7 +50,7 @@ int Exit(void) { return (0); }
  *
  */
 
-char *(comds[]) = {
+char *comds[] = {
 "cd", 
 "exit", 
 NULL
