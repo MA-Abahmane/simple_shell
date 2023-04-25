@@ -51,15 +51,16 @@ int Exit(void) { return (0); }
  */
 
 char *comds[] = {
-"cd", "exit", NULL
+"cd", 
+"exit", 
+NULL
 };
 
 
 /**
  * cmd_functions - a list that contains pointers to
  *   to the command functions.
- * @cd: cd().
- * @Exit: Exit().
+ * @char: somet.
  */
 
 int (*cmd_functions[])(char **) = {
