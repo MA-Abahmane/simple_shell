@@ -15,7 +15,7 @@ if (args[1] == NULL)
 char *home_dir = getenv("HOME");
 if (home_dir == NULL)
 {
-return -1;
+return (1);
 }
 
 if (chdir(home_dir) != 0)
@@ -42,7 +42,7 @@ return (1);
  * Return: Always 0.
  */
 /* The exit command */
-int Exit() { return (0);}
+int Exit(void) { return (0); }
 
 
 /**
@@ -54,9 +54,12 @@ char *comds[] = {
 "cd", "exit", NULL
 };
 
+
 /**
  * cmd_functions - a list that contains pointers to
  *   to the command functions.
+ * @cd: cd().
+ * @Exit: Exit().
  */
 
 int (*cmd_functions[])(char **) = {
