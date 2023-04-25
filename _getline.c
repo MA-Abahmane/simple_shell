@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * line_reader - convert the entered command to a string.
+ * _getline - convert the entered command to a string.
  * Return: the comand line as a string.
  */
 char *_getline()
@@ -13,7 +13,6 @@ if (!buffer)
 fprintf(stderr, "./hsh: allocation error\n");
 exit(EXIT_FAILURE);
 }
-
 while (1)
 {
 /* Read a character */
@@ -33,7 +32,6 @@ else
 buffer[position] = c;
 }
 position++;
-
 /* If we have exceeded the buffer, reallocate. */
 if (position >= bufsize)
 {
