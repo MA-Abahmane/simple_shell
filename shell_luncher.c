@@ -24,7 +24,7 @@ if (PID == 0)
 /* child process (Run command on shell) */
 if (execvp(args[0], args) == -1)
 {
-perror("./shell");
+perror("./hsh");
 }
 exit(EXIT_FAILURE);
 }
@@ -32,7 +32,7 @@ exit(EXIT_FAILURE);
 /* check if fork failed */
 else if (PID < 0 || PID_Wait < 0)
 {
-perror("./shell");
+perror("./hsh");
 }
 
 else

@@ -16,7 +16,7 @@ do {
 printf("($)");
 
 /* read the command line */
-line = line_reader();
+line = _getline();
 
 /* get arguments from the command line */
 lineArgs = line_args(line);

@@ -18,7 +18,7 @@ int i, bufSize = 77;
 arg_arr = malloc(sizeof(char *) * bufSize);
 if (arg_arr == NULL)
 {
-fprintf(stderr, "./shell: allocation failed\n");
+fprintf(stderr, "./hsh: allocation failed\n");
 exit(EXIT_FAILURE);
 }
 /* strtok points to all the serarated arguments in the command */
@@ -36,7 +36,7 @@ bufSize += bufSize;
 arg_arr = realloc(arg_arr, sizeof(char *) * bufSize);
 if (arg_arr == NULL)
 {
-fprintf(stderr, "./shell: reallocation failed\n");
+fprintf(stderr, "./hsh: reallocation failed\n");
 exit(EXIT_FAILURE);
 }
 }
