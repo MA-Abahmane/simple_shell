@@ -46,11 +46,11 @@ int Exit(void) { return (0); }
 
 
 /**
- * cmds - a list of file names to run comands.
+ * comds - a list of file names to run comands.
  *
  */
 
-char *comds[] = {
+char *(comds[]) = {
 "cd",
 "exit",
 NULL
