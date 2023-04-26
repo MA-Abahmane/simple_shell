@@ -42,7 +42,13 @@ return (1);
  * Return: Always 0.
  */
 /* The exit command */
-int Exit(void) { return (0); }
+int Exit(char **args)
+{
+if (args != NULL)
+return (0);
+
+return (0);
+}
 
 
 /**
