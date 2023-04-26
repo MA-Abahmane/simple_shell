@@ -47,7 +47,7 @@ int Exit(void) { return (0); }
 
 /**
  * comds - a list of file names to run comands.
- * 
+ *
  * @comds: none
  */
 
