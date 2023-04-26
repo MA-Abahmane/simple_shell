@@ -63,7 +63,7 @@ NULL
  * @char: somet.
  */
 
-int ((*cmd_functions[]) (char **)) = {
+int (*cmd_functions[]) (char **) = {
 &cd,
 &Exit
 };
