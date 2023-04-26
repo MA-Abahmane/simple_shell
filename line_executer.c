@@ -47,7 +47,8 @@ int Exit(void) { return (0); }
 
 /**
  * comds - a list of file names to run comands.
- *
+ * 
+ * @comds: none
  */
 
 char (*comds[]) = {
@@ -60,7 +61,7 @@ NULL
 /**
  * cmd_functions - a list that contains pointers to
  *   to the command functions.
- * @cmd_functions: somet.
+ * @cmd_functions: none
  */
 
 int (*cmd_functions[]) (char **) = {
