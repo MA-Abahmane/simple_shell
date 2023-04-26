@@ -42,7 +42,7 @@ return (1);
  * Return: Always 0.
  */
 /* The exit command */
-int Exit() { return (0); }
+int Exit(void) { return (0); }
 
 
 /**
@@ -51,8 +51,8 @@ int Exit() { return (0); }
  */
 
 char *comds[] = {
-"cd", 
-"exit", 
+"cd",
+"exit",
 NULL
 };
 
