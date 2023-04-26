@@ -3,7 +3,7 @@
 
 /**
  * cd - a function that opens directorys.
- *
+ * @args: arguments
  * Return: 1.
  */
 /* The cd command  */
@@ -63,7 +63,7 @@ NULL
  * @char: somet.
  */
 
-int (*cmd_functions[])(char **) = {
+int ((*cmd_functions[]) (char **)) = {
 &cd,
 &Exit
 };
