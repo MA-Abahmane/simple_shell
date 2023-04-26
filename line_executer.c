@@ -60,7 +60,7 @@ NULL
 /**
  * cmd_functions - a list that contains pointers to
  *   to the command functions.
- * @char: somet.
+ * @cmd_functions: somet.
  */
 
 int (*cmd_functions[]) (char **) = {
