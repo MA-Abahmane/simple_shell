@@ -38,6 +38,7 @@ return (1);
 
 /**
  * Exit - a function that exits the main_loop.
+ * @args: arguments.
  *
  * Return: Always 0.
  */
@@ -53,7 +54,7 @@ return (0);
 
 /**
  * comds - a list of file names to run comands.
- * @args: arguments
+ *
  * @comds: none
  */
 
