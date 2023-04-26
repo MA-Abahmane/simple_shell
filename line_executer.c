@@ -53,7 +53,7 @@ return (0);
 
 /**
  * comds - a list of file names to run comands.
- *
+ * @args: arguments
  * @comds: none
  */
 
