@@ -13,7 +13,7 @@ int stat;
 
 /* The main shell loop */
 do {
-printf("($)");
+printf("($) ");
 
 /* read the command line */
 line = _getline();
