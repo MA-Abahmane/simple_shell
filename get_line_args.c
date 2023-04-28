@@ -8,12 +8,13 @@
  *    in a string, then saves them in a 2D array.
  * @line: given cmmand line
  *
- * return: a 2D array containing the agruments (args)
+ * Return: a 2D array containing the agruments (args)
  */
 
 char **get_line_args(char *line)
 {
-int i, buffSize = BUFF_SIZE;
+int i;
+int buffSize = BUFF_SIZE;
 
 /* allocating space in memory for a 2D array  */
 char **args = malloc(sizeof(char *) * buffSize), *arg;
@@ -22,7 +23,6 @@ if (!args)
 write(STDERR_FILENO, "Allocation Error\n", _strlen("Allocation Error\n"));
 exit(EXIT_FAILURE);
 }
-
 /* _strtok works like the original strtok */
 arg = _strtok(line, SEPARATORS);
 i = 0;
