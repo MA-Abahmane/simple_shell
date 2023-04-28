@@ -4,8 +4,8 @@
 #define SEPARATORS " \t\r\a\n"
 
 /**
- * get_line_args - a function that seperates all arguments 
- *    in a string, then saves them in a 2D array
+ * get_line_args - a function that seperates all arguments
+ *    in a string, then saves them in a 2D array.
  * @line: given cmmand line
  *
  * Return: a 2D array containing the agruments (args)
