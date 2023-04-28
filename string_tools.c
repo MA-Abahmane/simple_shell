@@ -110,6 +110,5 @@ while (*str != (char)c && *str != '\0')
 
 ++str;
 }
-
 return ((*str == (char)c) ? (char *)str : NULL);
 }
