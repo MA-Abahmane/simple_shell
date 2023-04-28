@@ -68,5 +68,6 @@ return (-1);
 }
 ++s;
 }
-return (signe * ans);
+
+return (signe *ans);
 }
