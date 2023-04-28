@@ -32,11 +32,12 @@ if (*str < '0' || *str > '9')
 {
 break;
 }
+
 ans = ans * 10 + (*str - '0');
 ++str;
 }
 
-return (ans * sign);
+return (ans *sign);
 }
 
 
@@ -54,11 +55,13 @@ void *_memcpy(void *dest, const void *src, size_t n)
 {
 char *des_cp = (char *)dest;
 size_t i;
+/* copy memory data */
 const char *src_c = (const char *)src;
 for (i = 0; i < n; i++)
 {
 des_cp[i] = src_c[i];
 }
+
 return (dest);
 }
 
