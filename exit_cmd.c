@@ -1,5 +1,13 @@
 #include "main.h"
 
+/**
+ * str_to_int - it converets a string to an integer
+ * @s: given string
+ *
+ * Return: 0/-1
+*/
+int str_to_int(const char *s);
+
 
 /**
  * exit_cmd - unix exit command
@@ -7,7 +15,7 @@
  *
  * Return: NONE
 */
-int str_to_int(const char *s);
+
 void exit_cmd(char **args)
 {
 int exit_stat;
@@ -29,6 +37,7 @@ return;
 /* run exit */
 _exit(exit_stat);
 }
+
 
 /**
  * str_to_int - it converets a string to an integer
