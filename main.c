@@ -10,7 +10,7 @@
 
 int main(int argc, char *argv[])
 {
-char *prmpt = "#cisfun$ ";
+char *prmpt = "($) ";
 
 char *line, **line_args;
 int stat = 1;
