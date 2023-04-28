@@ -33,14 +33,14 @@ return (EOF);
 
 
 /**
- * read_line - a function that reads input from terminal (works like 'getline')
+ * get_line - a function that reads input from terminal (works like 'getline')
  *
  * Return: the inputed string (buffer).
 */
 
 char *get_line(void)
 {
-int i, c, buffSize = BUFF_SIZE;
+int i, buffSize = BUFF_SIZE, c;
 /* allocating a buffer to store the input line */
 char *buffer = malloc(sizeof(char) * buffSize);
 if (!buffer)
