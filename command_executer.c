@@ -47,7 +47,8 @@ return (NULL);
  * @cmd: given command
  * @args: given argumments
  *
- * Return: NONE'*/
+ * Return: NONE'
+ */
 
 void execute_user_command(cmd_func_matcher *cmd, char **args)
 {
