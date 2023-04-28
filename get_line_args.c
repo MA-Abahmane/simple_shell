@@ -8,7 +8,7 @@
  *    in a string, then saves them in a 2D array.
  * @line: given cmmand line
  *
- * Return: a 2D array containing the agruments (args)
+ * return: a 2D array containing the agruments (args)
  */
 
 char **get_line_args(char *line)
