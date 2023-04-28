@@ -122,5 +122,4 @@ write(STDOUT_FILENO, *envptr, _strlen(*envptr));
 write(STDOUT_FILENO, "\n", 1);
 envptr++;
 }
-
 }
