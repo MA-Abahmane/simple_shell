@@ -44,16 +44,17 @@ return (NULL);
 
 /**
  * execute_user_command - commands executer
- * @cmd: given command
- * @args: given argumments
+ * @cmd: given comd
+ * @args: given args
  *
  * Return: NONE'
  */
-
 void execute_user_command(cmd_func_matcher *cmd, char **args)
 {
+
 cmd->command_func(args);
 }
+
 
 /**
  * shell_luncher - Executes commands in the shell
