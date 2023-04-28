@@ -13,8 +13,8 @@ char *path;
 char *pwd;
 
 if (args[1] == NULL)
-path = getenv("HOME");
-else if (_strcmp(args[1], "=") == 0)
+return;
+else if (_strcmp(args[1], "-") == 0)
 {
 path = getenv("OLDPWD");
 if (path == NULL)
