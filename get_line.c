@@ -41,7 +41,6 @@ return (EOF);
 char *get_line(void)
 {
 int i, c, buffSize = BUFF_SIZE;
-
 /* allocating a buffer to store the input line */
 char *buffer = malloc(sizeof(char) * buffSize);
 if (!buffer)
@@ -68,8 +67,7 @@ else
 {
 buffer[i] = c;
 }
-i++;
-
+++i;
 if (i >= buffSize)
 {
 buffSize += BUFF_SIZE;
